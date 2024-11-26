@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Equipment Reservation Calendars</title>
+  <link rel="stylesheet" href="styles.css">
+  <link
+  href="https://cdn.jsdelivr.net/npm/fullcalendar@6.1.6/main.min.css"
+  rel="stylesheet"
+  />
+  <script src="https://cdn.jsdelivr.net/npm/fullcalendar@6.1.6/main.min.js"></script>
+
+</head>
+<body>
+  <div class="container">
+    <h1>Equipment Reservation Calendars</h1>
+    <table>
+      <thead>
+        <tr>
+          <th>Instrument Name</th>
+          <th>Comment</th>
+        </tr>
+      </thead>
+      <tbody id="equipment-list">
+        <!-- Rows will be dynamically populated -->
+      </tbody>
+    </table>
+
+    <div class="calendar-section">
+      <div class="buttons">
+        <button id="add-reservation">Add Reservation</button>
+        <button id="instructions">Instructions</button>
+      </div>
+      <div id="calendar"></div>
+    </div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
